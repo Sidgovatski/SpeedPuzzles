@@ -7,6 +7,7 @@ body {
     height: 120px;
     background-color: #c7ecee;
     width: auto;
+    margin-bottom: 150px;
 }
 
 .flexbox {
@@ -24,4 +25,39 @@ body {
 
 .link {
     text-decoration: none;
+}
+
+.ad {
+    border: 3px solid #c7ecee;
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+.flexbox2 {
+    display: flex;
+    justify-content: center;
+}
+
+.adText {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 200px
+}
+
+.text1 {
+    margin-left: 100px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 30px;
+    margin-bottom: 100px
+}
+
+.product {
+    border: 3px solid #c7ecee;
+}
+
+.flexbox3 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
 }

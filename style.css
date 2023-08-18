@@ -54,10 +54,18 @@ body {
 
 .product {
     border: 3px solid #c7ecee;
+    
 }
 
 .flexbox3 {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
+}
+
+.text2 {
+   
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 30px;
+    margin-bottom: 200px
 }

@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.topBar {
+    height: 120px;
+    background-color: #c7ecee;
+    width: auto;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+}

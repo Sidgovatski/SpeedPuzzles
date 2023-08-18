@@ -14,3 +14,9 @@ body {
     justify-content: left;
     flex-direction: row;
 }
+
+.flex {
+    margin: 30px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    color: black;
+}

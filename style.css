@@ -125,3 +125,24 @@ body {
     color: black;
     height: 60px;
 }
+
+.test {
+    display: grid;
+    grid-template-areas: 
+     "a b c"
+     "d e f";
+     gap: 30px;
+}
+
+.a {grid-area: a;
+height: 30px;}
+.b {grid-area: b;
+    height: 30px;}
+.c {grid-area: c;
+    height: 30px;}
+.d {grid-area: d;
+    height: 30px;}
+.e {grid-area: e;
+    height: 30px;}
+.f {grid-area: f;
+    height: 30px;}

@@ -68,7 +68,8 @@ body {
    
     font-family: 'Bricolage Grotesque', sans-serif;
     font-size: 30px;
-    margin-bottom: 200px
+    margin-bottom: 200px;
+    text-align: center;
 }
 .productpagepicture {
 
@@ -143,14 +144,33 @@ body {
 }
 
 .a {grid-area: a;
-height: 30px;}
+    height: 316px;
+    margin: 20px;
+    border: 3px solid #686de0;}
 .b {grid-area: b;
-    height: 30px;}
+    height: 316px;
+    margin: 20px;
+    border: 3px solid #686de0;}
 .c {grid-area: c;
-    height: 30px;}
+    height: 316px;
+    margin: 20px;
+    border: 3px solid #686de0;}
 .d {grid-area: d;
-    height: 30px;}
+    height: 50px;
+    margin: 20px;}
 .e {grid-area: e;
-    height: 30px;}
+    height: 50px;
+    margin: 20px;}
 .f {grid-area: f;
-    height: 30px;}
+    height: 50px;
+    margin: 20px;}
+
+.centerimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+.centertxt {
+    text-align: center;
+}

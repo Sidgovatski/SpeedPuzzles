@@ -19,8 +19,9 @@ body {
 .flex {
     margin: 30px;
     font-family: 'Bricolage Grotesque', sans-serif;
-    color: #686de0;
-    height: 60px;
+    color: #ffffff;
+    height: 80px;
+    font-size: 50px;
 }
 
 .link {

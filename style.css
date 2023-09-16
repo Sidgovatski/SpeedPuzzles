@@ -12,8 +12,9 @@ body {
 
 .topBar2 {
     height: 120px;
-    background-color: #686de0;
+    background-color: #9a9efa;
     width: auto;
+    margin-bottom: 150px;
     margin-bottom: 0px;
 }
 
@@ -123,7 +124,7 @@ body {
     color: #686de0;
 }
 .image-container {
-    height: 750px;
+    height: 600px;
     width: 2000px;
     border: 5px solid #686de0;
     display: flex;
@@ -226,7 +227,7 @@ body {
 .buy-button {
     margin-left: 60px;
     border-radius: 6px;
-    margin-top: 0px;
+    margin-top: 25px;
     padding-top: 0px;
     margin-bottom: 0px;
     padding-bottom: 0px;

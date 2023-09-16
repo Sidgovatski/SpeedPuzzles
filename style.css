@@ -156,6 +156,8 @@ body {
      "g h i"
      "j k l";
      gap: 30px;
+     grid-template-rows: auto auto auto;
+     grid-template-columns: auto auto auto;
 }
 
 .a {grid-area: a;

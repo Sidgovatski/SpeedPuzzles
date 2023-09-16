@@ -135,11 +135,13 @@ body {
     height: 60px;
 }
 
-.test {
+.grid1 {
     display: grid;
     grid-template-areas: 
      "a b c"
-     "d e f";
+     "d e f"
+     "g h i"
+     "j k l";
      gap: 30px;
 }
 
@@ -164,6 +166,29 @@ body {
 .f {grid-area: f;
     height: 50px;
     margin: 20px;}
+    .g {grid-area: g;
+        height: 316px;
+        margin: 20px;
+        border: 3px solid #686de0;}
+    .h {grid-area: h;
+        height: 316px;
+        margin: 20px;
+        border: 3px solid #686de0;}
+    .i {grid-area: i;
+        height: 316px;
+        margin: 20px;
+        border: 3px solid #686de0;}
+    .j {grid-area: j;
+        height: 50px;
+        margin: 20px;}
+    .k {grid-area: k;
+        height: 50px;
+        margin: 20px;}
+    .l {grid-area: l;
+        height: 50px;
+        margin: 20px;}
+    
+
 
 .centerimg {
     display: block;

@@ -1,16 +1,41 @@
 document.addEventListener("DOMContentLoaded", function () {
     const cartItems = document.getElementById("cart-items");
 
-    // Retrieve cart items from local storage
-    const cartData = localStorage.getItem("cart");
+    // Function to update the cart display and local storage
+    function updateCartDisplay() {
+        // Retrieve cart items from local storage
+        let cart = [];
+        const cartData = localStorage.getItem("cart");
+        if (cartData) {
+            cart = JSON.parse(cartData);
+        }
 
-    if (cartData) {
-        const cart = JSON.parse(cartData);
+        // Clear the current cart display
+        cartItems.innerHTML = "";
 
-        // Display cart items on the page with delete buttons
-        cart.forEach((item, index) => {
+        const cartMap = new Map(); // Use a map to group identical items
+
+        // Count and group identical items
+        cart.forEach((item) => {
+            if (cartMap.has(item)) {
+                // Increment count if item already exists in the map
+                const count = cartMap.get(item);
+                cartMap.set(item, count + 1);
+            } else {
+                // Add item to the map with a count of 1 if it doesn't exist
+                cartMap.set(item, 1);
+            }
+        });
+
+        // Display cart items with counts and delete buttons
+        cartMap.forEach((count, item) => {
             const cartItem = document.createElement("li");
-            cartItem.innerHTML = `${item} <button class="delete-button" data-item-index="${index}">Delete</button>`;
+            cartItem.innerHTML = `
+                <div class="cart-item">
+                    <span>${item} (x${count})</span>
+                    <button class="delete-button" data-item-name="${item}">Delete</button>
+                </div>
+            `;
             cartItems.appendChild(cartItem);
         });
 
@@ -18,15 +43,20 @@ document.addEventListener("DOMContentLoaded", function () {
         const deleteButtons = document.querySelectorAll(".delete-button");
         deleteButtons.forEach((button) => {
             button.addEventListener("click", function () {
-                const itemIndex = button.getAttribute("data-item-index");
-                // Remove the item from the cart array and update local storage
-                cart.splice(itemIndex, 1);
-                localStorage.setItem("cart", JSON.stringify(cart));
-                // Remove the item from the DOM
-                cartItems.removeChild(button.parentElement);
+                const itemName = button.getAttribute("data-item-name");
+                // Remove one instance of the item from the cart
+                const itemIndex = cart.indexOf(itemName);
+                if (itemIndex !== -1) {
+                    cart.splice(itemIndex, 1);
+                    // Update the cart in local storage
+                    localStorage.setItem("cart", JSON.stringify(cart));
+                    // Update the cart display
+                    updateCartDisplay();
+                }
             });
         });
-    } else {
-        console.log("Cart is empty");
     }
+
+    // Update the initial cart display when the page loads
+    updateCartDisplay();
 });

@@ -36,7 +36,7 @@ body {
 
 .flex {
     margin: 30px;
-    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Rubik', sans-serif;
     color: #ffffff;
     height: 80px;
     font-size: 50px;
@@ -65,7 +65,7 @@ body {
 }
 
 .adText {
-    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 30px;
     text-align: center;
     color: #686de0;
@@ -73,7 +73,7 @@ body {
 
 .text1 {
     margin-left: 100px;
-    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 30px;
     margin-bottom: 100px;
     color: #686de0;
@@ -92,7 +92,7 @@ body {
 
 .text2 {
    
-    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 30px;
     margin-bottom: 200px;
     text-align: center;
@@ -120,14 +120,14 @@ body {
 }
 .text3 {
    
-    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 30px;
     margin-left: 60px;
     padding: 0px;
     color: #686de0;
 }
 .text4 {
-    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 30px;
     margin-left: 60px;
     padding: 0px;
@@ -150,7 +150,7 @@ body {
 
 .text5 {
    
- font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Rubik', sans-serif;
  font-size: 30px;
  color: #686de0;
  margin: 5px;
@@ -160,7 +160,7 @@ body {
 
 .flex2 {
     
-    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Rubik', sans-serif;
     color: #686de0;
     height: 60px;
 }
@@ -248,8 +248,20 @@ body {
 }
 
 .footer {
-    background-color: #686de0;
+    background-color: #9a9efa;
     width: 2000px;
     height: 200px;
 
+}
+
+.logo2 {
+    height: 0px;
+    padding-left: 1500px;
+}
+
+.footerText {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Rubik', sans-serif;
+    padding-left: 20px;
 }

@@ -1,6 +1,8 @@
 body {
     margin: 0;
     padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .topBar {
@@ -243,4 +245,11 @@ body {
     width: 100px;
     background-color: #686de0;
     border: 1px solid #686de0;
+}
+
+.footer {
+    background-color: #686de0;
+    width: 2000px;
+    height: 200px;
+
 }

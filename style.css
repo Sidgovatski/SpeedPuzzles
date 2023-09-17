@@ -265,3 +265,31 @@ body {
     font-family: 'Rubik', sans-serif;
     padding-left: 20px;
 }
+
+.text6 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 50px;
+    color: #686de0;
+    margin-left: 25px;
+}
+
+#cart-items {
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    color: #686de0;
+    margin-left: 25px;
+}
+
+.delete-button {
+    margin-left: 60px;
+    border-radius: 6px;
+    margin-top: 25px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    height: 50px;
+    width: 90px;
+    background-color: #686de0;
+    border: 1px solid #686de0;
+    color: white;
+}

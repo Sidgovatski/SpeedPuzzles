@@ -23,19 +23,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
         cartMap.forEach((count, item) => {
             const cartItem = document.createElement("li");
-            cartItem.innerHTML = `
-                <div class="cart-item">
-                    <span>${item} (x${count})</span>
-                    <button class="delete-button" data-item-name="${item}">Delete</button>
-                </div>
-            `;
-            cartItems.appendChild(cartItem);
-        });
+            cartItem.textContent = `${item} (x${count})`;
 
-        const deleteButtons = document.querySelectorAll(".delete-button");
-        deleteButtons.forEach((button) => {
-            button.addEventListener("click", function () {
-                const itemName = button.getAttribute("data-item-name");
+            const deleteButton = document.createElement("button");
+            deleteButton.textContent = "Delete";
+            deleteButton.classList.add("delete-button");
+            deleteButton.dataset.itemName = item;
+
+            deleteButton.addEventListener("click", function () {
+                const itemName = this.dataset.itemName;
                 const itemIndex = cart.indexOf(itemName);
                 if (itemIndex !== -1) {
                     cart.splice(itemIndex, 1);
@@ -43,6 +39,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     updateCartDisplay();
                 }
             });
+
+            cartItem.appendChild(deleteButton);
+            cartItems.appendChild(cartItem);
         });
     }
 

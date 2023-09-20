@@ -1,16 +1,45 @@
+// JavaScript for search functionality
 document.addEventListener("DOMContentLoaded", function () {
-    const addToCartButtons = document.querySelectorAll(".add-to-cart");
+    const searchInput = document.getElementById("search-input");
+    const searchButton = document.getElementById("search-button");
+    const grid = document.getElementById("grid1");
+    const allProducts = document.querySelectorAll(".text2");
 
-    addToCartButtons.forEach((button) => {
-        button.addEventListener("click", function () {
-            // Get product information from the clicked button
-            const productName = button.getAttribute("data-product-name");
-            const productPrice = button.getAttribute("data-product-price");
-
-            // Store cart items in local storage
-            let cart = JSON.parse(localStorage.getItem("cart")) || [];
-            cart.push(`${productName} - €${productPrice}`);
-            localStorage.setItem("cart", JSON.stringify(cart));
-        });
+    searchButton.addEventListener("click", performSearch);
+    searchInput.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+            performSearch();
+        }
     });
+
+    function performSearch() {
+        const searchTerm = searchInput.value.toLowerCase();
+
+        // Clear previous search results
+        clearGrid();
+
+        if (searchTerm.trim() === "") {
+            // If the search bar is empty, display all products
+            allProducts.forEach((product) => {
+                const parentDiv = product.parentElement;
+                parentDiv.style.display = "block";
+            });
+        } else {
+            // Filter and display matching products
+            allProducts.forEach((product) => {
+                const productName = product.textContent.toLowerCase();
+                if (productName.includes(searchTerm)) {
+                    const parentDiv = product.parentElement;
+                    parentDiv.style.display = "block";
+                }
+            });
+        }
+    }
+
+    function clearGrid() {
+        allProducts.forEach((product) => {
+            const parentDiv = product.parentElement;
+            parentDiv.style.display = "none";
+        });
+    }
 });

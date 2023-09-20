@@ -1,20 +1,8 @@
-
 body {
     margin: 0;
     padding: 0;
     max-width: 100%;
     overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-
-.footer {
-    background-color: #9a9efa;
-    width: 100%;
-    height: 200px;
-    margin-top: auto;
 }
 
 .topBar {
@@ -163,10 +151,10 @@ body {
 .text5 {
    
     font-family: 'Rubik', sans-serif;
-    font-size: 30px;
-    color: #686de0;
-    margin: 5px;
-    text-align: center;
+ font-size: 30px;
+ color: #686de0;
+ margin: 5px;
+ text-align: center;
       
 }
 
@@ -259,7 +247,12 @@ body {
     border: 1px solid #686de0;
 }
 
+.footer {
+    background-color: #9a9efa;
+    width: 2000px;
+    height: 200px;
 
+}
 
 .logo2 {
     height: 0px;

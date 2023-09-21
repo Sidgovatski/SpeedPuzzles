@@ -17,7 +17,6 @@ body {
     height: 120px;
     background-color: var(--main-color);
     width: auto;
-    margin-bottom: 150px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -62,9 +61,12 @@ body {
 }
 
 .ad {
-    border: 3px solid var(--main-color);
-    height: 500px;
+    height: 400px;
     margin-bottom: 50px;
+}
+.ad-container {
+    width: 2000px;
+    border: 3px solid var(--main-color);
 }
 
 .flexbox-2 {

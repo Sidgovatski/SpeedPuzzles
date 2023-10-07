@@ -12,15 +12,18 @@
     <link rel="icon" href="speedpuzzleslogo1.png">
 </head>
 <body>
-    <div class="top-bar-2">
-        <div class="flexbox">
-            <a href="index.html"><img class="flex" src="speedpuzzleslogo1.png" alt="logo"></a>
-            <a class="link" href="Products.html"><h1 class="flex">Products</h1></a>
-            <a class="link" href="Cart.html"><h1 class="flex">Cart</h1></a>
+    <div class="top-bar">
+        <div class="left-icons">
+          <a href="index.html"><img class="home-icon" src="speedpuzzleslogo1.png" alt="Home"></a>
         </div>
-    </div>
+        <div class="center-search">
+          <input type="text" class="search-bar" placeholder="Search...">
+        </div>
+        <div class="right-icons">
+          <a href="cart.html" class="cart-icon">Cart</a>
+        </div>
+      </div>  
 
-    <br><br><br><br><br><br><br>
     <br><br><br><br>
 
     <div class="flexbox-3">
@@ -31,8 +34,6 @@
     </div>
     <h2 class="text-3">MoYu RS3M 2020</h2>
     <h3 class="price">€ 7.49</h3>
-    <button class="add-to-cart buy-button link-2" data-product-name="MoYu RS3M 2020" data-product-price="7.49">Add To Cart</button>
-    
     <h4 class="text-3">The MoYu RS3M is a 2020 budget magnetic cube that was mained by some professional cubers and still holds up to this day. 
         The magnets are pretty weak, but when lubed, it's pretty easy to feel them. It gives you a tactile snap that isn't too strong. 
         The MoYu adjustment system is also really easy to use with the included tool.
@@ -51,6 +52,6 @@
             <div class="logo-2"><img src="speedpuzzleslogo2.png" class="flex"></div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script type="module" src="./src/main.ts"></script>
 </body>
 </html>
